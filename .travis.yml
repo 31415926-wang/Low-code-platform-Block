@@ -17,9 +17,9 @@ deploy:
   api_key: $NPM_TOKEN
   on:
     tags: true
-    branch: master # 或者 master，取决于你使用的主要分支名称
+    branch: master # 或者 master， 取决于你使用的主要分支名称
 
 # 通常情况下，这个选项可以用于开启或关闭 Travis CI 的安全特性
 branches:
-  only:
+  only:git
     - master # 确保只对master 分支执行部署
