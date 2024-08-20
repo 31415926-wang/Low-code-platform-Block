@@ -15,7 +15,7 @@ type Story = StoryObj<typeof QsText>;
 
 export const Primary: Story = {
     args: {
-        widgetTitle: '标题物料-标题',
+        widgetTitle: '物料-标题',
         ...defaultCommonProps,
         ...defaultTextProps,
         titleValue: '标题文字',
@@ -25,7 +25,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
     args: {
-        widgetTitle: '标题物料-文字',
+        widgetTitle: '物料-文字',
         ...defaultCommonProps,
         ...defaultTextProps,
         textValue: '正文内容',
