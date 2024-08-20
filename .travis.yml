@@ -14,9 +14,13 @@ after_success:
 
 deploy:
   provider: npm
-  email: "1550642660@qq.com"
-  api_key:
-    secure: "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"  # 请替换为你的 NPM API 密钥
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
   on:
     tags: true
-    branch: master  # 或者你发布的分支
+    branch: master # 或者 master，取决于你使用的主要分支名称
+
+# 通常情况下，这个选项可以用于开启或关闭 Travis CI 的安全特性
+branches:
+  only:
+    - master # 确保只对 master 分支执行部署
