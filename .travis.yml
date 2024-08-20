@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "14"  # 或者你项目需要的其他 Node 版本
+
+install:
+  - npm install
+
+script:
+  - npm run lint
+  - npm test
+
+after_success:
+  - npm run build
+
+deploy:
+  provider: npm
+  email: "1550642660@qq.com"
+  api_key:
+    secure: "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"  # 请替换为你的 NPM API 密钥
+  on:
+    tags: true
+    branch: master  # 或者你发布的分支
