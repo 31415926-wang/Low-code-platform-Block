@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "14"  # 或者你项目需要的其他 Node 版本
+
+install:
+  - npm install
+
+script:
+  - npm run lint
+  - npm test
+
+after_success:
+  - npm run build
+
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
+    branch: master # 或者 master，取决于你使用的主要分支名称
+
+# 通常情况下，这个选项可以用于开启或关闭 Travis CI 的安全特性
+branches:
+  only:
+    - master # 确保只对 master 分支执行部署
