@@ -30,6 +30,11 @@ jobs:
 
     # - name: Build
     #   run: npm run build  # 如果你有构建步骤
+    - name: Set up Git
+       run: |
+      git config --global user.name "wain"
+      git config --global user.email "1550642660@qq.com"
+
     - name: upgradePatch
       run: npm run upgradePatch  # 如果你有构建步骤
 
