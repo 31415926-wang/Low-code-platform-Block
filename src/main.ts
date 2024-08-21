@@ -1,8 +1,8 @@
-import { App } from 'vue'
-import QsImg from "./components/QsImg/QsImg.vue";
-import QsShape from "./components/QsShape/QsShape.vue";
-import QsStyleFont from "./components/QsStyleFont/QsStyleFont.vue";
-import QsText from "./components/QsText/QsText.vue";
+import type { App } from 'vue'
+import QsImg from "@/components/QsImg/QsImg.vue";
+import QsShape from "@/components/QsShape/QsShape.vue";
+import QsStyleFont from "@/components/QsStyleFont/QsStyleFont.vue";
+import QsText from "@/components/QsText/QsText.vue";
 
 export {
     commonProps,

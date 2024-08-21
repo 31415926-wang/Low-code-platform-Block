@@ -121,6 +121,9 @@ devDependencies:
   typescript:
     specifier: ~4.5.5
     version: 4.5.5
+  url:
+    specifier: ^0.11.4
+    version: 0.11.4
   vue-loader:
     specifier: 17.4.2
     version: 17.4.2(@vue/compiler-sfc@3.4.37)(vue@3.4.37)(webpack@5.93.0)
