@@ -4,6 +4,14 @@ import QsShape from "@/components/QsShape/QsShape.vue";
 import QsStyleFont from "@/components/QsStyleFont/QsStyleFont.vue";
 import QsText from "@/components/QsText/QsText.vue";
 
+// 仅做测试
+export {
+    QsImg,
+    QsShape,
+    QsStyleFont,
+    QsText
+}
+
 export {
     commonProps,
     textProps,
