@@ -28,8 +28,10 @@ jobs:
       run: npm install
       # 作用: 这一步骤安装 package.json 中列出的所有依赖。对于大多数 Node.js 项目，这一步是必需的，因为没有安装依赖的项目无法正常构建或运行。
 
-    - name: Build
-      run: npm run build  # 如果你有构建步骤
+    # - name: Build
+    #   run: npm run build  # 如果你有构建步骤
+    - name: upgradePatch
+      run: npm run upgradePatch  # 如果你有构建步骤
 
     - name: Set up npm auth
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
