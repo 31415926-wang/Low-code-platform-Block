@@ -12,10 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "upgrade-major":"npm version major -m 'Upgrade reasons'",
-    "upgrade-minor":"npm version minor -m 'Upgrade reasons'",
-    "upgrade-patch":"npm version patch -m 'Upgrade reasons'",
-    "prepublishOnly":"npm run upgrade-patch"
+    "upgradeMajor":"npm version major -m 'Upgrade reasons'",
+    "upgradeMinor":"npm version minor -m 'Upgrade reasons'",
+    "upgradePatch":"npm version patch -m 'Upgrade reasons'",
+    "prepublishOnly":"npm run upgradePatch"
   },
   "files": [
     "dist"
