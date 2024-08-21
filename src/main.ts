@@ -58,6 +58,7 @@ const install = function (app: App) {
 }
 
 /* 供vue.use，这里一use就全部引入物料组件 */
-export default {
-    install
-}
+// export default {
+//     install
+// }
+export default install
