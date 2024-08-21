@@ -3,26 +3,13 @@ name: Publish npm Package Wain
 on:
   push:
     branches:
-      - main  # 设置为你的主要分支
+      - master  # 设置为你的主要分支
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    # - name: Checkout code
-    #   uses: actions/checkout@v3
-
-    # - name: Set up Node.js
-    #   uses: actions/setup-node@v3
-    #   with:
-    #     node-version: '16'  # 设置为你的 Node.js 版本
-
-    # - name: Install dependencies
-    #   run: npm install
-
-    # - name: Run tests
-    #   run: npm test  # 可选，确保发布前所有测试通过
 
     - name: Build
       run: npm run build  # 如果你有构建步骤
