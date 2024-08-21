@@ -31,7 +31,10 @@ jobs:
     - name: Build
       run: npm run build  # 如果你有构建步骤
 
+    - name: Set up npm auth
+      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      
     - name: Publish to npm
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # env:
+      #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npm publish
