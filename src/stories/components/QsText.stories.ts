@@ -9,7 +9,7 @@ const meta: Meta<typeof QsText> = {
 };
 
 export default meta;
-//  0099
+//  0
 
 type Story = StoryObj<typeof QsText>;
 
