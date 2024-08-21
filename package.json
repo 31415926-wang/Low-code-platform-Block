@@ -15,7 +15,7 @@
     "upgradeMajor":"npm version major -m 'Upgrade reasons'",
     "upgradeMinor":"npm version minor -m 'Upgrade reasons'",
     "upgradePatch":"npm version patch -m 'Upgrade reasons'",
-    "prepublishOnly":"npm run upgradePatch"
+    "prepublishOnly":"npm version patch -m 'Upgrade reasons'"
   },
   "files": [
     "dist"
