@@ -11,7 +11,11 @@
     "build:lib-prod": "rollup --config rollup.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "upgrade-major":"npm version major -m 'Upgrade reasons'",
+    "upgrade-minor":"npm version minor -m 'Upgrade reasons'",
+    "upgrade-patch":"npm version patch -m 'Upgrade reasons'",
+    "prepublishOnly":"npm run upgrade-patch"
   },
   "files": [
     "dist"
