@@ -30,19 +30,10 @@ jobs:
 
     # - name: Build
     #   run: npm run build  # 如果你有构建步骤
-    - name: Set up Git
-       run: 
-        git config --global user.name "wain"
-        git config --global user.email "1550642660@qq.com"
 
     - name: Set up npm auth
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
-    # 更新版本号 
-    - name: upgradePatch
-      run: npm run upgradePatch 
-
-      
     - name: Publish to npm
       # env:
       #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
