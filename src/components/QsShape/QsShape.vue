@@ -9,7 +9,7 @@
 
             <rect x="0" y="0" width="100" height="100" :fill="colorValue" v-else-if="$props.shapeValue === 'square'">
             </rect>
-            <rect x="0" y="0" width="50" height="100" :fill="colorValue" v-else-if="$props.shapeValue === 'rectangle'">
+            <rect x="25" y="0" width="50" height="100" :fill="colorValue" v-else-if="$props.shapeValue === 'rectangle'">
             </rect>
 
             <circle cx='50%' cy='50%' r='50%' :fill="colorValue" v-else-if="$props.shapeValue === 'circular'"></circle>
