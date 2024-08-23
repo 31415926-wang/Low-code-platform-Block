@@ -1,6 +1,6 @@
 {
   "name": "question-star-bricks",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "",
   "main": "dist/question-star-bricks.es.js",
   "types": "dist/main.d.ts",
@@ -63,6 +63,6 @@
     "rollup-plugin-vue": "^6.0.0",
     "tslib": "^2.6.3",
     "vite": "^5.4.0",
-    "vue": "^3.4.37"
+    "vue": "^3.2.13"
   }
 }
