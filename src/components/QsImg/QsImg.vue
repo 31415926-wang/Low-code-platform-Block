@@ -4,10 +4,10 @@
 </template>
 
 <script setup lang='ts'>
-import useHandleWidget from '@/hooks/useHandleWidget'
-import { commonProps, imgProps } from '@/type/widgets/index'
-import { imgStyleKeys } from '@/components/widgetStyleKey'
-import useDefaultImg from '@/hooks/useDefaultImg'
+import useHandleWidget from '../../hooks/useHandleWidget'
+import { commonProps, imgProps } from '../../type/widgets/index'
+import { imgStyleKeys } from '../widgetStyleKey'
+import useDefaultImg from '../../hooks/useDefaultImg'
 import { computed } from 'vue'
 
 const $props = defineProps<commonProps & imgProps>()

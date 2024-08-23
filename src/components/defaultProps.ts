@@ -1,4 +1,4 @@
-import { commonProps, textProps, imgProps, shapeProps } from '@/type/widgets/index'
+import { commonProps, textProps, imgProps, shapeProps } from '../type/widgets/index'
 import { pick } from 'lodash-es'
 // 物料的props默认值
 

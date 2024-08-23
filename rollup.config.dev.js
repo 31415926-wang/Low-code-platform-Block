@@ -54,13 +54,7 @@ export default {
             tsconfigOverride: {
                 compilerOptions: {
                     declaration: true,
-                    baseUrl: ".",
-                    // declarationMap: true,
-                    paths: {
-                        "@/*": [
-                            "src/*"
-                        ]
-                    },
+                    declarationMap: true,
                 },  //开启该项后，所有文件构建都会有ts类型文件，这样写只覆盖compilerOptions的declaration
                 exclude: ['src/stories']  // src不能省略
             }

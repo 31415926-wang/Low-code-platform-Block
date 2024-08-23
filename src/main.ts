@@ -1,8 +1,8 @@
-import type { App } from 'vue'
-import QsImg from "@/components/QsImg/QsImg.vue";
-import QsShape from "@/components/QsShape/QsShape.vue";
-import QsStyleFont from "@/components/QsStyleFont/QsStyleFont.vue";
-import QsText from "@/components/QsText/QsText.vue";
+// import type { App } from 'vue'
+import QsImg from "./components/QsImg/QsImg.vue";
+import QsShape from "./components/QsShape/QsShape.vue";
+import QsStyleFont from "./components/QsStyleFont/QsStyleFont.vue";
+import QsText from "./components/QsText/QsText.vue";
 
 // 仅做测试
 export {
@@ -19,14 +19,14 @@ export {
     shapeProps,
     AllWidgetProps,
     WidgetName
-} from '@/type/widgets/index'
+} from './type/widgets/index'
 
 export {
     defaultCommonProps,
     defaultTextProps,
     defaultImgProps,
     defaultShapeProps
-} from '@/components/defaultProps'
+} from './components/defaultProps'
 
 export {
     parentWrapperStyleKeys,
@@ -34,12 +34,12 @@ export {
     textStyleKeys,
     imgStyleKeys,
     shapeStyleKeys
-} from '@/components/widgetStyleKey'
+} from './components/widgetStyleKey'
 
 // const install = function (app: App) {
 //     /* 共用组件库中似乎不能用这种方式，组件未被打包 */
 //     // @ts-ignore
-//     const widgetComponents = require.context('@/components', true, /\.vue$/)
+//     const widgetComponents = require.context('./components', true, /\.vue$/)
 //     widgetComponents.keys().forEach((key: string) => {
 //         const file = widgetComponents(key).default
 //         const reg = /.*\/(.*)\.(vue|tsx)/
@@ -50,7 +50,7 @@ export {
 //     })
 // }
 
-const install = function (app: App) {
+const install = function (app: any) {
     type componentsType = {
         [key: string]: any
     }

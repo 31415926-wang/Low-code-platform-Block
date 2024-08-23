@@ -3,7 +3,7 @@
 export default function () {
     // const $store = useStore()
     const getDefaultImg = () => {
-        return require('@/assets/image/defaultImg.png')
+        return require('../assets/image/defaultImg.png')
     }
     const getImgSrc = (srcValue: string) => {
         // return srcValue.length !== 0
