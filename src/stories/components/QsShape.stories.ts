@@ -44,14 +44,4 @@ export const test3: Story = {
         'background-color': '#9666d1'
     }
 };
-export const test4: Story = {
-    args: {
-        widgetTitle: '长方形',
-        ...defaultShapeProps,
-        width: '40px',
-        height: '170px',
-        shapeValue: 'rectangle',
-        'background-color': '#9666d1'
-    }
-};
 

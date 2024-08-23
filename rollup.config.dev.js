@@ -6,6 +6,7 @@ import scss from 'rollup-plugin-scss';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import packageData from "./package.json" assert {type: 'json'}
 import del from 'rollup-plugin-delete'
+import commonjs from '@rollup/plugin-commonjs';
 
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -41,6 +42,7 @@ export default {
     ],
     plugins: [
         nodeResolve(),
+        commonjs(),
         alias({
             entries: [
                 {

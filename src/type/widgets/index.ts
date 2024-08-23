@@ -42,7 +42,7 @@ export type imgProps = {
 
 export type shapeProps = Pick<commonProps, // 都是从已有的属性取
     'position' | 'height' | 'width' | 'opacity' | 'top' | 'left' | 'rotate' | 'background-color'>
-    & { shapeValue?: 'triangle' | 'square' | 'circular' | 'rectangle' }
+    & { shapeValue?: 'triangle' | 'square' | 'circular' }
 
 export type AllWidgetProps = commonProps & textProps & imgProps & shapeProps
 
