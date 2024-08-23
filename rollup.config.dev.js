@@ -59,11 +59,11 @@ export default {
                 exclude: ['src/stories']  // src不能省略
             }
         }),
+        vue(),
         scss({
             fileName: 'outputScss.css',
         }),
         del({ targets: 'dist/*' }),  //构建时删除旧文件
-        vue()
     ],
     external: [ //目的就是不要把其他的外部库全部打包到我们的库中
         "vue",

@@ -1,5 +1,5 @@
 <template>
-    <div :style="boxStyle">
+    <div :style="boxStyle" style="border: 1px solid red;">
         <!-- viewBox定义了视口范围，使得 SVG 的坐标系统是正方形，范围从 (0,0) 到 (100,100)。 -->
         <!-- preserveAspectRatio 属性用于控制 SVG 图形在其视口内部的显示方式。它可以确保 SVG 图形在不同尺寸的视口中按照指定的规则进行缩放和对齐。
             第一个方式是对齐方式、第二个决定是否保存比例
@@ -16,6 +16,7 @@
         </svg>
     </div>
 </template>
+
 
 <script setup lang='ts'>
 import { computed } from 'vue'
