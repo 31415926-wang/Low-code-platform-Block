@@ -1,14 +1,12 @@
-// import { useStore } from '@/store/index'
-
 export default function () {
-    // const $store = useStore()
+    // const getDefaultImg = () => {
+    //     return require('../assets/image/defaultImg.png')
+    // }
     const getDefaultImg = () => {
-        return require('../assets/image/defaultImg.png')
+        // return require('../assets/image/defaultImg.png')
+        return new URL('../assets/image/defaultImg.png', import.meta.url).href; //可以代替require方法
     }
     const getImgSrc = (srcValue: string) => {
-        // return srcValue.length !== 0
-        //     ? $store.state.apiStore.imgEchoApi + srcValue
-        //     : getDefaultImg()
         return srcValue.length !== 0
             ? srcValue
             : getDefaultImg()

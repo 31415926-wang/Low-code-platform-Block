@@ -42,7 +42,6 @@ export default {
     ],
     plugins: [
         nodeResolve(),
-        commonjs(),
         alias({
             entries: [
                 {
