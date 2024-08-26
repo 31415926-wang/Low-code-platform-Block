@@ -1,6 +1,6 @@
 <template>
     <img :src="imgSrc" alt="" :style="styleProps">
-    {{imgSrc}}
+    <!-- {{imgSrc}} -->
 </template>
 
 <script setup lang='ts'>

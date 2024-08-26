@@ -13,6 +13,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { externalAssets } from "rollup-plugin-external-assets";
 import url from '@rollup/plugin-url';
+import cjs from "rollup-plugin-cjs-es";
 
 /* 获取绝对路径 */
 const __filename = fileURLToPath(import.meta.url);

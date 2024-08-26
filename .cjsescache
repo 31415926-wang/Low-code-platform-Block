@@ -1,0 +1,13 @@
+[
+  "~\u0000plugin-vue:export-helper",
+  "src/components/QsImg/QsImg.vue",
+  "src/components/QsImg/QsImg.vue?vue&type=script&setup=true&lang.ts",
+  "src/components/QsShape/QsShape.vue",
+  "src/components/QsShape/QsShape.vue?vue&type=script&setup=true&lang.ts",
+  "src/components/QsStyleFont/QsStyleFont.vue",
+  "src/components/QsStyleFont/QsStyleFont.vue?vue&type=script&setup=true&lang.ts",
+  "src/components/QsText/QsText.vue",
+  "src/components/QsText/QsText.vue?vue&type=script&setup=true&lang.ts",
+  "src/hooks/useDefaultImg.ts",
+  "src/hooks/useHandleWidget.ts"
+]
