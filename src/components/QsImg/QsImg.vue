@@ -1,9 +1,12 @@
 <template>
-    <img :src="imgSrc" alt="" :style="styleProps">
+    <!-- <img :src="imgSrc" alt="" :style="styleProps"> -->
+    <img :src="defaultImg" alt="" :style="styleProps">
     <!-- {{imgSrc}} -->
 </template>
 
 <script setup lang='ts'>
+import defaultImg from '../../assets/image/defaultImg.png'
+
 import useHandleWidget from '../../hooks/useHandleWidget'
 import { commonProps, imgProps } from '../../type/widgets/index'
 import { imgStyleKeys } from '../widgetStyleKey'
