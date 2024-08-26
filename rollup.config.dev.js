@@ -51,7 +51,8 @@ export default {
             limit: 0, // 将所有图片作为文件处理，0表示不进行内联
             fileName: '[name][extname]',
             destDir: path.resolve(__dirname, 'dist/assets'),
-            publicPath: 'assets/'
+            // publicPath: 'assets/',
+            sourceDir:path.resolve(__dirname, 'dist/assets')
         }),
         nodeResolve(),
         alias({
