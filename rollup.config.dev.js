@@ -11,6 +11,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import { externalAssets } from "rollup-plugin-external-assets";
+import url from '@rollup/plugin-url';
 
 /* 获取绝对路径 */
 const __filename = fileURLToPath(import.meta.url);
@@ -41,8 +43,14 @@ export default {
     },
     ],
     plugins: [
-        commonjs({
-            esmExternals: true,
+        del({ targets: 'dist/*' }),  //构建时删除旧文件
+        // externalAssets(path.resolve(__dirname, 'src/assets/*')),
+        url({
+            include: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
+            limit: 0, // 将所有图片作为文件处理，0表示不进行内联
+            fileName: '[name][extname]',
+            destDir: path.resolve(__dirname, 'dist/assets'),
+            publicPath: 'assets/'
         }),
         nodeResolve(),
         alias({
@@ -67,7 +75,6 @@ export default {
         scss({
             fileName: 'outputScss.css',
         }),
-        del({ targets: 'dist/*' }),  //构建时删除旧文件
     ],
     external: [ //目的就是不要把其他的外部库全部打包到我们的库中
         "vue",
