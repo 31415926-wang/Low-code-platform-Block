@@ -45,14 +45,14 @@ export default {
     ],
     plugins: [
         del({ targets: 'dist/*' }),  //构建时删除旧文件
-        // externalAssets(path.resolve(__dirname, 'src/assets/*')),
         url({
             include: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
-            limit: 10240, // 在该大小内的图片，将内联，不作为文件处理
+            limit: 0, // 在该大小内的图片，将内联，不作为文件处理
             fileName: '[name][extname]',
             destDir: path.resolve(__dirname, 'dist/assets'),
             publicPath: './assets/',
         }),
+        externalAssets('assets/*'),
         nodeResolve(),
         alias({
             entries: [
