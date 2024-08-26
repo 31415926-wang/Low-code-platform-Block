@@ -41,7 +41,9 @@ export default {
     },
     ],
     plugins: [
-        commonjs(),
+        commonjs({
+            esmExternals: true,
+        }),
         nodeResolve(),
         alias({
             entries: [
