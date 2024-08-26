@@ -48,11 +48,10 @@ export default {
         // externalAssets(path.resolve(__dirname, 'src/assets/*')),
         url({
             include: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
-            limit: 0, // 将所有图片作为文件处理，0表示不进行内联
+            limit: 10240, // 在该大小内的图片，将内联，不作为文件处理
             fileName: '[name][extname]',
             destDir: path.resolve(__dirname, 'dist/assets'),
-            // publicPath: 'assets/',
-            sourceDir:path.resolve(__dirname, 'dist/assets')
+            publicPath: './assets/',
         }),
         nodeResolve(),
         alias({
