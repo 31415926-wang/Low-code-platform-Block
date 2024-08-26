@@ -1,6 +1,6 @@
-let defaultImg = require('../assets/image/defaultImg.png')
+// let defaultImg = require('../assets/image/defaultImg.png')
 // 改用es方法
-// import defaultImg from '../assets/image/defaultImg.png'
+import defaultImg from '../assets/image/defaultImg.png'
 export default function () {
     const getDefaultImg = () => {
         return defaultImg
