@@ -1,6 +1,6 @@
 {
   "name": "question-star-bricks",
-  "version": "1.2.21",
+  "version": "1.2.22",
   "description": "",
   "main": "dist/question-star-bricks.es.js",
   "types": "dist/main.d.ts",
