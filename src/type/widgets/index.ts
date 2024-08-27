@@ -21,8 +21,7 @@ export type commonProps = {
     'background-image': string,
     'box-shadow': string
     rotate: string,
-    scale: number,
-    'text-shadow': string
+    scale: number
 }
 export type textProps = {
     // 通过初始值去决定表单项
@@ -34,7 +33,8 @@ export type textProps = {
     'font-style': string,
     'line-height': number,
     'text-align': string,
-    color: string
+    color: string,
+    'text-shadow': string
 }
 export type imgProps = {
     src: string

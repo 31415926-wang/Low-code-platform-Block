@@ -1,8 +1,9 @@
 {
   "name": "question-star-bricks",
-  "version": "1.2.31",
+  "version": "1.2.32",
   "description": "",
-  "main": "dist/question-star-bricks.es.js",
+  "main": "dist/question-star-bricks.cjs.js",
+  "module": "dist/question-star-bricks.es.js",
   "types": "dist/main.d.ts",
   "type": "module",
   "scripts": {
@@ -66,6 +67,9 @@
     "rollup-plugin-vue": "^6.0.0",
     "tslib": "^2.6.3",
     "vite": "^5.4.0",
+    "vue": "^3.4.38"
+  },
+  "peerDependencies": {
     "vue": "^3.4.38"
   }
 }

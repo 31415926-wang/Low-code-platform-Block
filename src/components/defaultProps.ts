@@ -24,12 +24,12 @@ export const defaultCommonProps: commonProps = {
     'background-image': '',
     'box-shadow': '0px 0px 0px #fa541c',
     rotate: '0deg',
-    scale: 1,
+    scale: 1
     // 'text-shadow': '0px 0px 0px'
-    'text-shadow': 'none'
 }
 
 export const defaultTextProps: textProps = {
+    'text-shadow': 'none',
     'font-size': '16px',
     'font-family': '"SimSun","STSong"',
     'font-weight': 'normal',
