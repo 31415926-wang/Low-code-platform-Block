@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <img :src="imgSrc" alt="" :style="styleProps">
-    </div>
+    <!-- <div > -->
+    <img :src="imgSrc" :id="$props.id" alt="" :style="styleProps">
+    <!-- </div> -->
     <!-- {{imgSrc}} -->
 </template>
 
@@ -13,7 +13,8 @@ import { imgStyleKeys } from '../widgetStyleKey'
 import useDefaultImg from '../../hooks/useDefaultImg'
 import { computed } from 'vue'
 
-const $props = defineProps<commonProps & imgProps>()
+/* 手动控制id挂载 */
+const $props = defineProps<commonProps & imgProps & { id: string }>()
 
 const { styleProps } = useHandleWidget<commonProps & imgProps>($props, imgStyleKeys)
 
