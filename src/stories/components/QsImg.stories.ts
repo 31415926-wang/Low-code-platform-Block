@@ -15,6 +15,8 @@ type Story = StoryObj<typeof QsImg>;
 
 export const Primary: Story = {
     args: {
+        id: 'testId',
+        widgeTitle: '图片',
         ...defaultCommonProps,
         'padding-top': '0px',
         'padding-bottom': '0px',

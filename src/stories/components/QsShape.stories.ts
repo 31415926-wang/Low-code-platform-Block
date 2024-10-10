@@ -15,7 +15,8 @@ type Story = StoryObj<typeof QsShape>;
 
 export const Primary: Story = {
     args: {
-        widgetTitle: '三角形',
+        id: 'testId',
+        widgeTitle: '形状',
         ...defaultShapeProps,
         width: '70px',
         height: '70px',

@@ -3,7 +3,7 @@
         {{ $props.textValue || $props.titleValue || $props.widgetTitle }}
     </p>
 </template>
-
+ 
 <script setup lang='ts'>
 import { textProps, commonProps } from '@/type/widgets/index'
 import { textStyleKeys } from '@/components/widgetStyleKey'

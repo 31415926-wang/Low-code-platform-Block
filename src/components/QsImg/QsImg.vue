@@ -1,5 +1,7 @@
 <template>
-    <img :src="imgSrc" alt="" :style="styleProps">
+    <div>
+        <img :src="imgSrc" alt="" :style="styleProps">
+    </div>
     <!-- {{imgSrc}} -->
 </template>
 

@@ -12,7 +12,7 @@
 
             <circle cx='50%' cy='50%' r='50%' :fill="colorValue" v-else-if="$props.shapeValue === 'circular'"></circle>
         </svg>
-    </div>
+    </div> 
 </template>
 
 
