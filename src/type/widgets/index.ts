@@ -18,7 +18,8 @@ export type commonProps = {
     'border-style': string,
     'border-width': string,
     'background-color': string,
-    'background-image': string,
+    'background-image'?: string,
+    'background-size'?: string,
     'box-shadow': string
     rotate: string,
     scale: number
