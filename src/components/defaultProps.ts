@@ -34,7 +34,7 @@ export const defaultTextProps: textProps = {
     'font-family': '"SimSun","STSong"',
     'font-weight': 'normal',
     'font-style': 'normal',
-    'line-height': 'normal',
+    'line-height': 1.2,
     'text-align': 'left',
     color: '#000000'
 }

@@ -31,7 +31,7 @@ export type textProps = {
     'font-family': string,
     'font-weight': string,
     'font-style': string,
-    'line-height': string,
+    'line-height': number,
     'text-align': string,
     color: string,
     'text-shadow': string
